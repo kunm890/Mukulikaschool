@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mukulika School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script>
+function toggleLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.style.display = el.getAttribute('data-lang')===lang?'block':'none';
+  });
+}
+</script>
+</head>
+<body onload="toggleLang('en')">
+
+<header>
+  <h1>Mukulika School</h1>
+  <p data-lang="en">Making Future India</p>
+  <p data-lang="bn">ভবিষ্যৎ ভারত গড়ে তোলা</p>
+  <div class="lang-btn">
+    <button onclick="toggleLang('en')">English</button>
+    <button onclick="toggleLang('bn')">বাংলা</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h2 data-lang="en">Nursery to Class IV</h2>
+  <h2 data-lang="bn">নার্সারি থেকে চতুর্থ শ্রেণী</h2>
+</section>
+
+<section>
+  <h2 data-lang="en">About School</h2>
+  <h2 data-lang="bn">স্কুল সম্পর্কে</h2>
+  <p data-lang="en">Mukulika School provides quality education in English and Bengali medium with a caring environment.</p>
+  <p data-lang="bn">মুকুলিকা স্কুল ইংরেজি ও বাংলা মাধ্যমে মানসম্মত শিক্ষা প্রদান করে।</p>
+</section>
+
+<section>
+  <h2 data-lang="en">Notice Board</h2>
+  <h2 data-lang="bn">নোটিস বোর্ড</h2>
+  <ul>
+    <li data-lang="en">Admission open for 2026</li>
+    <li data-lang="bn">২০২৬ শিক্ষাবর্ষের জন্য ভর্তি চলছে</li>
+  </ul>
+</section>
+
+<section>
+  <h2 data-lang="en">Gallery</h2>
+  <h2 data-lang="bn">গ্যালারি</h2>
+  <div class="gallery">
+    <div>Photo 1</div><div>Photo 2</div><div>Photo 3</div>
+  </div>
+</section>
+
+<section>
+  <h2 data-lang="en">Admission Enquiry</h2>
+  <h2 data-lang="bn">ভর্তি সংক্রান্ত তথ্য</h2>
+  <form>
+    <input type="text" placeholder="Parent Name" required>
+    <input type="text" placeholder="Student Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <button type="submit">Submit</button>
+  </form>
+  <a class="btn" href="prospectus.pdf" download>Download Prospectus</a>
+</section>
+
+<footer>
+  <p>📞 +918391816498 | ✉️ mukulikaschool@zohomail.in</p>
+  <p>📍 Vill+Post Aziznagar, PS Deganga, North 24 Parganas, WB – 743425</p>
+</footer>
+
+</body>
+</html>
